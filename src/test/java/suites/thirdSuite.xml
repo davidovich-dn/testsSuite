@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GMail Test Suite" parallel="false">
+    <test name="Test Google Mail Box">
+        <classes>
+            <class name="tests.mailSection.MailSignInTest"/>
+            <class name="tests.mailSection.MailSignInTest"/>
+        </classes>
+    </test>
+</suite>
