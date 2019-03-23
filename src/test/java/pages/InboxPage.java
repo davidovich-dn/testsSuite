@@ -11,17 +11,19 @@ public class InboxPage extends AbstractPage{
     @FindBy(xpath = "//div[@class='gb_db']")
     private WebElement emailAddress;
 
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//a[@id='gb_71']")
     private WebElement exitButton;
 
     public InboxPage(){
         super();
     }
 
-    public InboxPage goToAccountMenu(){
+    public PasswordFormPage doLogout(){
         accountMenu.click();
         System.out.println("Go to account menu");
-        return this;
+        exitButton.click();
+        System.out.println("Logout successful");
+        return new PasswordFormPage();
     }
 
     public String getEmailAddress(){
