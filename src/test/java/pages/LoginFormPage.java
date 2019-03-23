@@ -4,34 +4,28 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import driver.DriverSingleton;
 
-public class LoginPage extends AbstractPage{
+public class LoginFormPage extends AbstractPage{
 
     @FindBy(xpath = "//input[@type='email']")
     private WebElement loginInputField;
 
-    @FindBy(xpath = "//input[@type='password']")
-    private WebElement passwordInputField;
-
     @FindBy(xpath = "//span[@class='RveJvd snByac']")
     private WebElement nextButton;
 
-    public LoginPage(){
+    public LoginFormPage(){
         super();
     }
 
-    public LoginPage openLoginPage(String url) {
+    public LoginFormPage openLoginPage(String url) {
         DriverSingleton.getDriver().navigate().to(url);
         System.out.println("Login page is opened");
         return this;
     }
 
-    public InboxPage doLogin(String userName, String password) {
-        loginInputField.sendKeys(userName);
+    public PasswordFormPage startLogin(String login){
+        loginInputField.sendKeys(login);
         nextButton.click();
-        passwordInputField.sendKeys(password);
-        nextButton.click();
-
-        System.out.println("Logged successfully");
-        return new InboxPage();
+        System.out.println("Login has entered");
+        return new PasswordFormPage();
     }
 }
