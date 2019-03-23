@@ -1,5 +1,6 @@
 package services;
 
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import pages.InboxPage;
 
@@ -9,6 +10,14 @@ public class InternalService {
 
     public void checkIsLoginSuccessful(String email) {
         inboxPage = new InboxPage();
-        Assert.assertEquals(inboxPage.getEmail(), email, "Login has failed");
+        Assert.assertEquals(inboxPage.getEmailAddress(), email, "Check has failed");
+    }
+
+    public void logout(){
+
+    }
+
+    public void checkIsLogoutSuccessful(WebElement element){
+
     }
 }
