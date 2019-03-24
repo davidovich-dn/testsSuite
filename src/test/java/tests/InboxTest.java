@@ -29,7 +29,7 @@ public class InboxTest extends BaseTest {
         internalService.sendNewLetter(Data.EMAIL, Data.SUBJECT, Data.MAIL_BODY);
     }
 
-    @AfterGroups(value = "letterSending")
+    @AfterGroups(groups = "letterSending")
     public void logoutAfterTest(){
         internalService.logoutFromEmailBox();
     }
