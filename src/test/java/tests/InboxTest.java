@@ -19,17 +19,17 @@ public class InboxTest extends BaseTest {
     }
 
     @Test(description = "Logout check", groups = "logout")
-    public void tst_mailLogout(){
+    public void mailLogout(){
         internalService.logoutFromEmailBox();
         internalService.checkIsLogoutSuccessful();
     }
 
     @Test(description = "Letter sending test", groups = "letterSending")
-    public void tst_mailLetterSending(){
+    public void mailLetterSending(){
         internalService.sendNewLetter(Data.EMAIL, Data.SUBJECT, Data.MAIL_BODY);
     }
 
-    @AfterGroups("letterSending")
+    @AfterGroups(value = "letterSending")
     public void logoutAfterTest(){
         internalService.logoutFromEmailBox();
     }
