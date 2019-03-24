@@ -2,8 +2,7 @@
 <suite name="GMail Test Suite" parallel="false">
     <test name="Test Google Mail Box">
         <classes>
-            <class name="tests.mailSection.MailSignInTest"/>
-            <class name="tests.mailSection.MailSignInTest"/>
+            <class name="tests.LoginTest"/>
         </classes>
     </test>
 </suite>

@@ -1,9 +1,8 @@
 package services;
 
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import pages.InboxPage;
-import pages.LoginFormPage;
+import pages.NewLetterPage;
 import pages.PasswordFormPage;
 
 public class InternalService {
@@ -23,5 +22,19 @@ public class InternalService {
     public void checkIsLogoutSuccessful(){
         passwordFormPage = new PasswordFormPage();
         Assert.assertEquals(passwordFormPage.isElementLoginInputFieldPresent(), true, "No such element: loginInputField");
+    }
+
+    public void sendNewLetter(String to, String subject, String body){
+        inboxPage = new InboxPage()
+                .createNewLetter()
+                .fillNewMailToField(to)
+                .fillNewMailSubjectField(subject)
+                .fillNewMailBodyField(body)
+                .clickNewMailSendButton();
+    }
+
+    public void checkIsNewLetterReceived(){
+        inboxPage = new InboxPage();
+        //Assert.assertEquals(inboxPage.);
     }
 }

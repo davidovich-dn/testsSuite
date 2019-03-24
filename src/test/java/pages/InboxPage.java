@@ -5,6 +5,9 @@ import org.openqa.selenium.support.FindBy;
 
 public class InboxPage extends AbstractPage{
 
+    @FindBy(xpath = "//div[@class='T-I J-J5-Ji T-I-KE L3']")
+    private WebElement createNewLetterButton;
+
     @FindBy(xpath = "//a[@class='gb_x gb_Da gb_f']")
     private WebElement accountMenu;
 
@@ -33,5 +36,10 @@ public class InboxPage extends AbstractPage{
         address = emailAddress.getText();
         System.out.println("Checking account");
         return address;
+    }
+
+    public NewLetterPage createNewLetter(){
+        createNewLetterButton.click();
+        return new NewLetterPage();
     }
 }
