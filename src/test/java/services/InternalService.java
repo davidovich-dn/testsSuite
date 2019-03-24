@@ -21,7 +21,7 @@ public class InternalService {
 
     public void checkIsLogoutSuccessful(){
         passwordFormPage = new PasswordFormPage();
-        Assert.assertEquals(passwordFormPage.isElementLoginInputFieldPresent(), true, "No such element: loginInputField");
+        Assert.assertEquals(passwordFormPage.isElementPasswordInputFieldPresent(), true, "No such element: loginInputField");
     }
 
     public void sendNewLetter(String to, String subject, String body){

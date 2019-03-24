@@ -25,7 +25,7 @@ public class InboxPage extends Page {
         accountMenu.click();
         System.out.println("Go to account menu");
         exitButton.click();
-        System.out.println("Logout successful");
+        System.out.println("Press exit button");
         return new PasswordFormPage();
     }
 

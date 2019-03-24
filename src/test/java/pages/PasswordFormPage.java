@@ -1,6 +1,7 @@
 package pages;
 
 import driver.DriverSingleton;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,11 +11,11 @@ public class PasswordFormPage extends Page {
 
     WebDriverWait wait = new WebDriverWait(DriverSingleton.getDriver(), 10);
 
-    @FindBy(xpath = "//input[@type='password']")
-    private WebElement element;
+    //@FindBy(xpath = "//input[@type='password']")
+    //private WebElement element;
 
     private WebElement passwordInputField = wait.until(
-            ExpectedConditions.visibilityOf(element));
+            ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@type='password']")));
 
     @FindBy(xpath = "//span[@class='RveJvd snByac']")
     private WebElement nextButton;
@@ -31,7 +32,7 @@ public class PasswordFormPage extends Page {
         return new InboxPage();
     }
 
-    public boolean isElementLoginInputFieldPresent(){
+    public boolean isElementPasswordInputFieldPresent(){
         return isElementPresent(passwordInputField);
     }
 }
