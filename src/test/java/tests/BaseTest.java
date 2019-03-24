@@ -17,7 +17,7 @@ public abstract class BaseTest {
     }
 
     @AfterTest(description = "Close browser")
-    public void afterSuite(){
+    public void afterTest(){
         DriverSingleton.getDriver().quit();
     }
 }

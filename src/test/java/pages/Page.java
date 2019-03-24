@@ -5,14 +5,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import driver.DriverSingleton;
 
-public abstract class Page {
+abstract class Page {
 
-    public Page()
+    Page()
     {
         PageFactory.initElements(DriverSingleton.getDriver(), this);
     }
 
-    public boolean isElementPresent(WebElement element) {
+    boolean isElementPresent(WebElement element) {
         boolean result;
         try {
             result = element.isDisplayed();

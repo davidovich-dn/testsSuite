@@ -4,23 +4,17 @@ import data.Data;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import services.ExternalService;
-import services.InternalService;
 
 public class LogoutTest extends BaseTest{
 
-    private ExternalService externalService = new ExternalService();
-    private InternalService internalService = new InternalService();
-
     @BeforeMethod(description = "Preparation for logout")
     public void logoutPreparations(){
-        externalService.openPage(Data.URL);
-        externalService.loginToEmailBox(Data.EMAIL, Data.PASSWORD);
+        Data.EXTERNAL_SERVICE.loginToEmailBox(Data.URL, Data.EMAIL, Data.PASSWORD);
     }
 
-    @Test(description = "Logout check", groups = "logout")
+    @Test(description = "Logout check")
     public void mailLogout(){
-        internalService.logoutFromEmailBox();
-        Assert.assertTrue(internalService.isElementPasswordInputFieldPresentThrowing(), "No such element: loginInputField");
+        Data.INTERNAL_SERVICE.logoutFromEmailBox();
+        Assert.assertTrue(Data.INTERNAL_SERVICE.isElementPasswordInputFieldPresentThrowing(), "No such element: loginInputField");
     }
 }

@@ -9,9 +9,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PasswordFormPage extends Page {
 
-    private WebDriverWait wait = new WebDriverWait(DriverSingleton.getDriver(), 10);
+    private final WebDriverWait wait = new WebDriverWait(DriverSingleton.getDriver(), 10);
 
-    private WebElement passwordInputField = wait.until(
+    private final WebElement passwordInputField = wait.until(
             ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@type='password']")));
 
     @FindBy(xpath = "//span[@class='RveJvd snByac']")

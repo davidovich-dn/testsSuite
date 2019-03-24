@@ -1,37 +1,28 @@
 package tests;
 
 import data.Data;
-import driver.DriverSingleton;
 import org.testng.Assert;
-import org.testng.annotations.AfterGroups;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import services.ExternalService;
-import services.InternalService;
-
-import java.util.concurrent.TimeUnit;
 
 public class LetterSendTest extends BaseTest{
 
-    private ExternalService externalService = new ExternalService();
-    private InternalService internalService = new InternalService();
-
-    @BeforeMethod(description = "Preparation for logout")
+    @BeforeMethod(description = "Preparation for letter sending")
     public void logoutPreparations(){
-        externalService.openPage(Data.URL);
-        externalService.loginToEmailBox(Data.EMAIL, Data.PASSWORD);
+        Data.EXTERNAL_SERVICE.loginToEmailBox(Data.URL, Data.EMAIL, Data.PASSWORD);
     }
 
-    @Test(description = "Letter sending test", groups = "letterSending")
+    @Test(description = "Letter sending test")
     public void mailLetterSending() throws InterruptedException {
-        internalService.sendNewLetter(Data.EMAIL, Data.SUBJECT, Data.MAIL_BODY);
-        Thread.sleep(2000);
-        Assert.assertTrue(internalService.checkIsNewLetterReceived(), "Letter has not been sent");
+        Data.INTERNAL_SERVICE.sendNewLetter(Data.EMAIL, Data.SUBJECT, Data.MAIL_BODY);
+        Thread.sleep(2000);// not a good idea, but...
+        Assert.assertTrue(Data.INTERNAL_SERVICE.checkIsNewLetterReceived(), "Letter has not been sent");
     }
 
-    @AfterGroups(groups = "letterSending")
+    @AfterMethod(description = "Logout")
     public void logoutAfterTest(){
         //internalService.cleanAfterTestThrow(); - think about cleaning
-        internalService.logoutFromEmailBox();
+        Data.INTERNAL_SERVICE.logoutFromEmailBox();
     }
 }

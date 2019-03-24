@@ -3,7 +3,7 @@ import org.testng.xml.XmlSuite;
 
 import java.util.ArrayList;
 
-public class Runner {
+class Runner {
     public static void main(String[] args) {
         TestNG testNG = new TestNG();
 
