@@ -24,8 +24,9 @@ public class LoginFormPage extends Page {
 
     public PasswordFormPage startLogin(String login){
         loginInputField.sendKeys(login);
+        System.out.println("Entering login");
         nextButton.click();
-        System.out.println("Login has entered");
+        System.out.println("Next button click");
         return new PasswordFormPage();
     }
 }

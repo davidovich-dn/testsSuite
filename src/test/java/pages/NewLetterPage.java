@@ -23,21 +23,25 @@ public class NewLetterPage extends Page {
 
     public NewLetterPage fillNewMailToField(String to){
         newMailToField.sendKeys(to);
+        System.out.println("mailTo field filled");
         return this;
     }
 
     public NewLetterPage fillNewMailSubjectField(String subject){
         newMailSubjectField.sendKeys(subject);
+        System.out.println("subject field filled");
         return this;
     }
 
     public NewLetterPage fillNewMailBodyField(String body){
         newMailBodyField.sendKeys(body);
+        System.out.println("mailBody field filled");
         return this;
     }
 
     public InboxPage clickNewMailSendButton(){
         newMailSendButton.click();
+        System.out.println("send button click");
         return new InboxPage();
     }
 }

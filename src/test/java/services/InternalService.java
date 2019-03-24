@@ -7,12 +7,10 @@ public class InternalService {
 
     private InboxPage inboxPage;
     private PasswordFormPage passwordFormPage;
-    private LoginFormPage loginFormPage;
 
     public String emailForCheckThrowing(){
         inboxPage = new InboxPage();
-        String s = inboxPage.getEmailAddress();
-        return s;
+        return inboxPage.getEmailAddress();
     }
 
     public void logoutFromEmailBox(){
@@ -21,7 +19,11 @@ public class InternalService {
 
     public void checkIsLogoutSuccessful(){
         passwordFormPage = new PasswordFormPage();
-        Assert.assertEquals(passwordFormPage.isElementPasswordInputFieldPresent(), true, "No such element: loginInputField");
+        Assert.assertTrue(passwordFormPage.isElementPasswordInputFieldPresent(), "No such element: passwordInputField");
+    }
+
+    public boolean isElementPasswordInputFieldPresentThrowing(){
+        return passwordFormPage.isElementPasswordInputFieldPresent();
     }
 
     public void sendNewLetter(String to, String subject, String body){
@@ -33,8 +35,13 @@ public class InternalService {
                 .clickNewMailSendButton();
     }
 
-    public void checkIsNewLetterReceived(){
+    public boolean checkIsNewLetterReceived(){
         inboxPage = new InboxPage();
-        //Assert.assertEquals(inboxPage.);
+        return inboxPage.isLetterSent();
+    }
+
+    public InboxPage cleanAfterTestThrow(){
+        inboxPage = new InboxPage().cleanAfterTest();
+        return inboxPage;
     }
 }

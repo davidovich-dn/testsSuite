@@ -1,6 +1,7 @@
 package tests;
 
 import data.Data;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import services.ExternalService;
@@ -20,6 +21,6 @@ public class LogoutTest extends BaseTest{
     @Test(description = "Logout check", groups = "logout")
     public void mailLogout(){
         internalService.logoutFromEmailBox();
-        internalService.checkIsLogoutSuccessful();
+        Assert.assertTrue(internalService.isElementPasswordInputFieldPresentThrowing(), "No such element: loginInputField");
     }
 }

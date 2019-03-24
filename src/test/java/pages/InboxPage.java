@@ -1,9 +1,12 @@
 package pages;
 
+import data.Data;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class InboxPage extends Page {
+
+    private final String lineToLoccator = "//div[@class='y6']/span[contains(.,'" + Data.SUBJECT + "')]";
 
     @FindBy(xpath = "//div[@class='T-I J-J5-Ji T-I-KE L3']")
     private WebElement createNewLetterButton;
@@ -20,8 +23,14 @@ public class InboxPage extends Page {
     @FindBy(xpath = "//span[@email='davidovich.dn.tests@gmail.com']")
     private WebElement letter;
 
-    //@FindBy(xpath = "//div[@class='b8 UC bAp']//div[@class='vh']")
-    //private WebElement successfulMessage;
+    @FindBy(xpath = lineToLoccator)
+    private WebElement mailSubjectForCheck;
+
+    @FindBy(xpath = "//div[@role='checkbox']")
+    private WebElement checkboxForDelete;
+
+    @FindBy(xpath = "//div[@aria-label='Удалить']")// bad xpath
+    private WebElement menuDeletePic;
 
     public InboxPage(){
         super();
@@ -46,6 +55,17 @@ public class InboxPage extends Page {
 
     public NewLetterPage createNewLetter(){
         createNewLetterButton.click();
+        System.out.println("Create a new letter");
         return new NewLetterPage();
+    }
+
+    public boolean isLetterSent(){
+        return isElementPresent(mailSubjectForCheck);
+    }
+
+    public InboxPage cleanAfterTest(){
+        checkboxForDelete.click();
+        menuDeletePic.click();
+        return new InboxPage();
     }
 }
