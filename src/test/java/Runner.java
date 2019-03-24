@@ -11,9 +11,7 @@ public class Runner {
         xmlSuite.setName("MySuite");
         xmlSuite.setSuiteFiles(new ArrayList<String>() {
             {
-                add("./src/test/resources/suites/loginSuite.xml");
-                add("./src/test/resources/suites/logoutSuite.xml");
-                //add("./src/test/resources/suites/letterSendingSuite.xml");
+                add("./src/test/resources/suites/suite.xml");
             }
         });
 

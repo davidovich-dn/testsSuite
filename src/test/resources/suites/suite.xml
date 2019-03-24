@@ -3,6 +3,8 @@
     <test name="Test Google Mail Box">
         <classes>
             <class name="tests.LoginTest"/>
+            <class name="tests.LogoutTest"/>
+            <class name="tests.LetterSendTest"/>
         </classes>
     </test>
 </suite>

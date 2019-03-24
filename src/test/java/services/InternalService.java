@@ -1,18 +1,18 @@
 package services;
 
 import org.testng.Assert;
-import pages.InboxPage;
-import pages.NewLetterPage;
-import pages.PasswordFormPage;
+import pages.*;
 
 public class InternalService {
 
     private InboxPage inboxPage;
     private PasswordFormPage passwordFormPage;
+    private LoginFormPage loginFormPage;
 
-    public void checkIsLoginSuccessful(String email) {
+    public String emailForCheckThrowing(){
         inboxPage = new InboxPage();
-        Assert.assertEquals(inboxPage.getEmailAddress(), email, "Check has failed");
+        String s = inboxPage.getEmailAddress();
+        return s;
     }
 
     public void logoutFromEmailBox(){

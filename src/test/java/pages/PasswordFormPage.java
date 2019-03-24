@@ -11,14 +11,14 @@ public class PasswordFormPage extends Page {
 
     WebDriverWait wait = new WebDriverWait(DriverSingleton.getDriver(), 10);
 
-    //@FindBy(xpath = "//input[@type='password']")
-    //private WebElement element;
-
     private WebElement passwordInputField = wait.until(
             ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@type='password']")));
 
     @FindBy(xpath = "//span[@class='RveJvd snByac']")
     private WebElement nextButton;
+
+    @FindBy(xpath = "//div[@class='Z4o1ee GyDlGb cd29Sd iiFyne']")
+    private WebElement userChangeField;
 
     public PasswordFormPage(){
         super();
@@ -34,5 +34,10 @@ public class PasswordFormPage extends Page {
 
     public boolean isElementPasswordInputFieldPresent(){
         return isElementPresent(passwordInputField);
+    }
+
+    public UsersListPage goToUserList(){
+        userChangeField.click();
+        return new UsersListPage();
     }
 }

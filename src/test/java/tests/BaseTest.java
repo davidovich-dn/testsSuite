@@ -1,14 +1,14 @@
 package tests;
 
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
 import driver.DriverSingleton;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
 
 public abstract class BaseTest {
 
-    @BeforeSuite(description = "Add implicitly wait and maximize window")
+    @BeforeTest(description = "Add implicitly wait and maximize window")
     public void addImplicitly(){
         DriverSingleton.getDriver()
                 .manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -16,7 +16,7 @@ public abstract class BaseTest {
                 .manage().window().maximize();
     }
 
-    @AfterSuite(description = "Close browser")
+    @AfterTest(description = "Close browser")
     public void afterSuite(){
         DriverSingleton.getDriver().quit();
     }

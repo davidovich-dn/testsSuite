@@ -17,6 +17,12 @@ public class InboxPage extends Page {
     @FindBy(xpath = "//a[@id='gb_71']")
     private WebElement exitButton;
 
+    @FindBy(xpath = "//span[@email='davidovich.dn.tests@gmail.com']")
+    private WebElement letter;
+
+    //@FindBy(xpath = "//div[@class='b8 UC bAp']//div[@class='vh']")
+    //private WebElement successfulMessage;
+
     public InboxPage(){
         super();
     }
