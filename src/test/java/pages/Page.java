@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import driver.DriverSingleton;
 
-public abstract class AbstractPage {
+public abstract class Page {
 
-    public AbstractPage()
+    public Page()
     {
         PageFactory.initElements(DriverSingleton.getDriver(), this);
     }

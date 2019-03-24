@@ -11,12 +11,12 @@ public abstract class BaseTest {
     @BeforeSuite(description = "Add implicitly wait and maximize window")
     public void addImplicitly(){
         DriverSingleton.getDriver()
-                .manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+                .manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         DriverSingleton.getDriver()
                 .manage().window().maximize();
     }
 
-    @AfterSuite(description = "Stop browser")
+    @AfterSuite(description = "Close browser")
     public void afterSuite(){
         DriverSingleton.getDriver().quit();
     }

@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import driver.DriverSingleton;
 
-public class LoginFormPage extends AbstractPage{
+public class LoginFormPage extends Page {
 
     @FindBy(xpath = "//input[@type='email']")
     private WebElement loginInputField;
