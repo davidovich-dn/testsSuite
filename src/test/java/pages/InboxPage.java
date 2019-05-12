@@ -1,10 +1,14 @@
 package pages;
 
 import data.Data;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class InboxPage extends Page {
+
+    private static final Logger logger = LogManager.getRootLogger();
 
     private final String lineToLoccator = "//div[@class='y6']/span[contains(.,'" + Data.SUBJECT + "')]";
 
@@ -29,8 +33,8 @@ public class InboxPage extends Page {
     @FindBy(xpath = "//div[@role='checkbox']")
     private WebElement checkboxForDelete;
 
-    @FindBy(xpath = "//div[@aria-label='Удалить']")// bad xpath
-    private WebElement menuDeletePic;
+    @FindBy(xpath = "//div[@class='asa']")
+    private WebElement menuDeleteButton;
 
     public InboxPage(){
         super();
@@ -38,34 +42,40 @@ public class InboxPage extends Page {
 
     public PasswordFormPage doLogout(){
         accountMenu.click();
-        System.out.println("Go to account menu");
+        logger.info("Go to account menu");
         exitButton.click();
-        System.out.println("Press exit button");
+        logger.info("Press exit button");
         return new PasswordFormPage();
     }
 
     public String getEmailAddress(){
         String address;
         accountMenu.click();
-        System.out.println("Go to account menu");
+        logger.info("Go to account menu");
         address = emailAddress.getText();
-        System.out.println("Checking account");
+        logger.info("Getting e-mail address");
+        accountMenu.click();
+        logger.info("Close account menu");
         return address;
     }
 
     public NewLetterPage createNewLetter(){
         createNewLetterButton.click();
-        System.out.println("Create a new letter");
+        logger.info("Create a new letter");
         return new NewLetterPage();
     }
 
     public boolean isLetterSent(){
+        logger.info("Looking for received letter");
         return isElementPresent(mailSubjectForCheck);
     }
 
     public InboxPage cleanAfterTest(){
+        logger.info("Start cleaning");
         checkboxForDelete.click();
-        menuDeletePic.click();
+        logger.info("Check letter");
+        menuDeleteButton.click();
+        logger.info("The letter goes to a trash can");
         return new InboxPage();
     }
 }

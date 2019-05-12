@@ -1,9 +1,16 @@
 package pages;
 
+import driver.Driver;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class NewLetterPage extends Page {
+
+    private static final Logger logger = LogManager.getRootLogger();
 
     @FindBy(xpath = "//textarea[@name='to']")
     private WebElement newMailToField;
@@ -14,34 +21,41 @@ public class NewLetterPage extends Page {
     @FindBy(xpath = "//div[@class ='Am Al editable LW-avf']")
     private WebElement newMailBodyField;
 
-    @FindBy(xpath = "//div[@class='T-I J-J5-Ji aoO T-I-atl L3']")
+    @FindBy(xpath = "//div[@class='T-I J-J5-Ji aoO v7 T-I-atl L3']")
     private WebElement newMailSendButton;
 
-    public NewLetterPage(){
+    @FindBy(xpath = "//span[@class='bAq'][contains(text(),'Письмо отправлено')]")//div[@class='b8 UC bAp']//div[@class='vh']
+    private WebElement newMailSentMessage;
+
+    NewLetterPage(){
         super();
     }
 
     public NewLetterPage fillNewMailToField(String to){
         newMailToField.sendKeys(to);
-        System.out.println("mailTo field filled");
+        logger.info("MailTo field filled");
         return this;
     }
 
     public NewLetterPage fillNewMailSubjectField(String subject){
         newMailSubjectField.sendKeys(subject);
-        System.out.println("subject field filled");
+        logger.info("Subject field filled");
         return this;
     }
 
     public NewLetterPage fillNewMailBodyField(String body){
         newMailBodyField.sendKeys(body);
-        System.out.println("mailBody field filled");
+        logger.info("MailBody field filled");
         return this;
     }
 
     public InboxPage clickNewMailSendButton(){
         newMailSendButton.click();
-        System.out.println("send button click");
+        logger.info("Send button click");
+        logger.info("Waiting for message about successful sending");
+        (new WebDriverWait(Driver.getDriver(), 5)).until(ExpectedConditions
+                .visibilityOf(newMailSentMessage));
+        logger.info("Message about successful sending appeared");
         return new InboxPage();
     }
 }
