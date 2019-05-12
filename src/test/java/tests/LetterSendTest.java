@@ -24,5 +24,6 @@ public class LetterSendTest extends BaseTest{
     public void logoutAfterTest(){
         //internalService.cleanAfterTestThrow(); - think about cleaning
         Data.INTERNAL_SERVICE.logoutFromEmailBox();
+        //Data.EXTERNAL_SERVICE.logoutFromEmailBox();
     }
 }

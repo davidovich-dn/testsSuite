@@ -17,6 +17,12 @@ public class PasswordFormPage extends Page {
     @FindBy(xpath = "//span[@class='RveJvd snByac']")
     private WebElement nextButton;
 
+    @FindBy(xpath = "//div[contains(@class,'vgHGpc RRP0oc')]")
+    private WebElement userChangeMenu;
+
+    @FindBy(xpath = "//div[contains(@jsname,'rwl3qc')]")
+    private WebElement toLoginFormPageLink;
+
     public PasswordFormPage(){
         super();
     }
@@ -27,6 +33,12 @@ public class PasswordFormPage extends Page {
         nextButton.click();
         System.out.println("Next button click");
         return new InboxPage();
+    }
+
+    public LoginFormPage goToLoginFormPage(){
+        userChangeMenu.click();
+        toLoginFormPageLink.click();
+        return new LoginFormPage();
     }
 
     public boolean isElementPasswordInputFieldPresent(){
