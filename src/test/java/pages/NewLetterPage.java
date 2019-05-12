@@ -24,7 +24,7 @@ public class NewLetterPage extends Page {
     @FindBy(xpath = "//div[@class='T-I J-J5-Ji aoO v7 T-I-atl L3']")
     private WebElement newMailSendButton;
 
-    @FindBy(xpath = "//span[@class='bAq'][contains(text(),'Письмо отправлено')]")//div[@class='b8 UC bAp']//div[@class='vh']
+    @FindBy(xpath = "//span[@class='bAq'][contains(text(),'Письмо отправлено')]")
     private WebElement newMailSentMessage;
 
     NewLetterPage(){

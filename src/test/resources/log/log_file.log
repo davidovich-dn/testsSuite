@@ -1,0 +1,200 @@
+2019-05-12 20:55:11 INFO  root:31 - Browser started.
+2019-05-12 20:55:26 INFO  root:37 - Browser closed.
+2019-05-12 21:09:57 INFO  root:31 - Browser started.
+2019-05-12 21:09:59 INFO  root:25 - Login page is opened
+2019-05-12 21:09:59 INFO  root:31 - Entering login
+2019-05-12 21:10:00 INFO  root:33 - Next button click
+2019-05-12 21:10:01 INFO  root:36 - Password entered
+2019-05-12 21:10:01 INFO  root:38 - Next button click
+2019-05-12 21:10:46 INFO  root:37 - Browser closed.
+2019-05-12 21:18:47 INFO  root:31 - Browser started.
+2019-05-12 21:18:49 INFO  root:25 - Login page is opened
+2019-05-12 21:18:50 INFO  root:31 - Entering login
+2019-05-12 21:18:50 INFO  root:33 - Next button click
+2019-05-12 21:18:51 INFO  root:36 - Password entered
+2019-05-12 21:18:52 INFO  root:38 - Next button click
+2019-05-12 21:19:09 INFO  root:37 - Browser closed.
+2019-05-12 21:45:45 INFO  root:31 - Browser started.
+2019-05-12 21:45:47 INFO  root:25 - Login page is opened
+2019-05-12 21:45:48 INFO  root:31 - Entering login
+2019-05-12 21:45:48 INFO  root:33 - Next button click
+2019-05-12 21:45:49 INFO  root:36 - Password entered
+2019-05-12 21:45:49 INFO  root:38 - Next button click
+2019-05-12 21:52:34 INFO  root:31 - Browser started.
+2019-05-12 21:52:36 INFO  root:25 - Login page is opened
+2019-05-12 21:52:36 INFO  root:31 - Entering login
+2019-05-12 21:52:37 INFO  root:33 - Next button click
+2019-05-12 21:52:38 INFO  root:36 - Password entered
+2019-05-12 21:52:38 INFO  root:38 - Next button click
+2019-05-12 21:52:55 INFO  root:37 - Browser closed.
+2019-05-12 23:49:20 INFO  root:31 - Browser started.
+2019-05-12 23:49:22 INFO  root:25 - Login page is opened
+2019-05-12 23:49:22 INFO  root:31 - Entering login
+2019-05-12 23:49:23 INFO  root:33 - Next button click
+2019-05-12 23:49:24 INFO  root:36 - Password entered
+2019-05-12 23:49:24 INFO  root:38 - Next button click
+2019-05-12 23:49:34 INFO  root:37 - Browser closed.
+2019-05-12 23:51:22 INFO  root:31 - Browser started.
+2019-05-12 23:51:25 INFO  root:25 - Login page is opened
+2019-05-12 23:51:25 INFO  root:31 - Entering login
+2019-05-12 23:51:25 INFO  root:33 - Next button click
+2019-05-12 23:51:27 INFO  root:36 - Password entered
+2019-05-12 23:51:27 INFO  root:38 - Next button click
+2019-05-12 23:52:06 INFO  root:37 - Browser closed.
+2019-05-12 23:52:47 INFO  root:31 - Browser started.
+2019-05-12 23:52:49 INFO  root:25 - Login page is opened
+2019-05-12 23:52:49 INFO  root:31 - Entering login
+2019-05-12 23:52:50 INFO  root:33 - Next button click
+2019-05-12 23:52:51 INFO  root:36 - Password entered
+2019-05-12 23:52:51 INFO  root:38 - Next button click
+2019-05-12 23:53:05 INFO  root:37 - Browser closed.
+2019-05-12 23:57:22 INFO  root:31 - Browser started.
+2019-05-12 23:57:25 INFO  root:25 - Login page is opened
+2019-05-12 23:57:25 INFO  root:31 - Entering login
+2019-05-12 23:57:25 INFO  root:33 - Next button click
+2019-05-12 23:57:27 INFO  root:36 - Password entered
+2019-05-12 23:57:27 INFO  root:38 - Next button click
+2019-05-12 23:57:41 INFO  root:37 - Browser closed.
+2019-05-13 00:00:18 INFO  root:31 - Browser started.
+2019-05-13 00:00:20 INFO  root:25 - Login page is opened
+2019-05-13 00:00:21 INFO  root:31 - Entering login
+2019-05-13 00:00:21 INFO  root:33 - Next button click
+2019-05-13 00:00:22 INFO  root:36 - Password entered
+2019-05-13 00:00:23 INFO  root:38 - Next button click
+2019-05-13 00:00:51 INFO  root:37 - Browser closed.
+2019-05-13 00:04:13 INFO  root:31 - Browser started.
+2019-05-13 00:04:15 INFO  root:25 - Login page is opened
+2019-05-13 00:04:15 INFO  root:31 - Entering login
+2019-05-13 00:04:15 INFO  root:33 - Next button click
+2019-05-13 00:04:17 INFO  root:36 - Password entered
+2019-05-13 00:04:17 INFO  root:38 - Next button click
+2019-05-13 00:04:34 INFO  root:37 - Browser closed.
+2019-05-13 00:12:11 INFO  root:31 - Browser started.
+2019-05-13 00:12:13 INFO  root:25 - Login page is opened
+2019-05-13 00:12:14 INFO  root:31 - Entering login
+2019-05-13 00:12:14 INFO  root:33 - Next button click
+2019-05-13 00:12:15 INFO  root:36 - Password entered
+2019-05-13 00:12:16 INFO  root:38 - Next button click
+2019-05-13 00:14:12 INFO  root:31 - Browser started.
+2019-05-13 00:14:14 INFO  root:25 - Login page is opened
+2019-05-13 00:14:15 INFO  root:31 - Entering login
+2019-05-13 00:14:15 INFO  root:33 - Next button click
+2019-05-13 00:14:16 INFO  root:36 - Password entered
+2019-05-13 00:14:16 INFO  root:38 - Next button click
+2019-05-13 00:14:34 INFO  root:37 - Browser closed.
+2019-05-13 00:36:58 INFO  root:31 - Browser started.
+2019-05-13 00:36:58 INFO  root:16 - Start log in
+2019-05-13 00:37:00 INFO  root:25 - Login page is opened
+2019-05-13 00:37:00 INFO  root:31 - Entering login
+2019-05-13 00:37:01 INFO  root:33 - Next button click
+2019-05-13 00:37:02 INFO  root:36 - Password entered
+2019-05-13 00:37:02 INFO  root:38 - Next button click
+2019-05-13 00:37:14 INFO  root:54 - Go to account menu
+2019-05-13 00:37:14 INFO  root:56 - Getting e-mail address
+2019-05-13 00:37:14 INFO  root:72 - Start cleaning
+2019-05-13 00:37:38 INFO  root:16 - Start log in
+2019-05-13 00:37:38 INFO  root:16 - Start log in
+2019-05-13 00:41:32 INFO  root:31 - Browser started.
+2019-05-13 00:41:32 INFO  root:16 - Start log in
+2019-05-13 00:41:35 INFO  root:25 - Login page is opened
+2019-05-13 00:41:35 INFO  root:31 - Entering login
+2019-05-13 00:41:35 INFO  root:33 - Next button click
+2019-05-13 00:41:37 INFO  root:36 - Password entered
+2019-05-13 00:41:37 INFO  root:38 - Next button click
+2019-05-13 00:41:43 INFO  root:54 - Go to account menu
+2019-05-13 00:41:43 INFO  root:56 - Getting e-mail address
+2019-05-13 00:41:43 INFO  root:72 - Start cleaning
+2019-05-13 00:42:07 INFO  root:16 - Start log in
+2019-05-13 00:42:07 INFO  root:16 - Start log in
+2019-05-13 00:43:50 INFO  root:31 - Browser started.
+2019-05-13 00:43:50 INFO  root:16 - Start log in
+2019-05-13 00:43:52 INFO  root:25 - Login page is opened
+2019-05-13 00:43:52 INFO  root:31 - Entering login
+2019-05-13 00:43:53 INFO  root:33 - Next button click
+2019-05-13 00:43:54 INFO  root:36 - Password entered
+2019-05-13 00:43:54 INFO  root:38 - Next button click
+2019-05-13 00:44:04 INFO  root:54 - Go to account menu
+2019-05-13 00:44:04 INFO  root:56 - Getting e-mail address
+2019-05-13 00:44:04 INFO  root:72 - Start cleaning
+2019-05-13 00:44:15 INFO  root:16 - Start log in
+2019-05-13 00:44:15 INFO  root:16 - Start log in
+2019-05-13 00:44:52 INFO  root:31 - Browser started.
+2019-05-13 00:44:52 INFO  root:16 - Start log in
+2019-05-13 00:44:54 INFO  root:25 - Login page is opened
+2019-05-13 00:44:54 INFO  root:31 - Entering login
+2019-05-13 00:44:55 INFO  root:33 - Next button click
+2019-05-13 00:44:56 INFO  root:36 - Password entered
+2019-05-13 00:44:56 INFO  root:38 - Next button click
+2019-05-13 00:45:05 INFO  root:54 - Go to account menu
+2019-05-13 00:45:07 INFO  root:56 - Getting e-mail address
+2019-05-13 00:45:07 INFO  root:21 - Start log out
+2019-05-13 00:45:07 INFO  root:45 - Go to account menu
+2019-05-13 00:45:13 INFO  root:47 - Press exit button
+2019-05-13 00:49:05 INFO  root:31 - Browser started.
+2019-05-13 00:49:05 INFO  root:16 - Start log in
+2019-05-13 00:49:07 INFO  root:25 - Login page is opened
+2019-05-13 00:49:08 INFO  root:31 - Entering login
+2019-05-13 00:49:08 INFO  root:33 - Next button click
+2019-05-13 00:49:10 INFO  root:36 - Password entered
+2019-05-13 00:49:10 INFO  root:38 - Next button click
+2019-05-13 00:49:19 INFO  root:54 - Go to account menu
+2019-05-13 00:49:19 INFO  root:56 - Getting e-mail address
+2019-05-13 00:49:19 INFO  root:58 - Close account menu
+2019-05-13 00:49:19 INFO  root:21 - Start log out
+2019-05-13 00:49:19 INFO  root:45 - Go to account menu
+2019-05-13 00:49:22 INFO  root:47 - Press exit button
+2019-05-13 00:49:22 INFO  root:44 - Go to User change menu
+2019-05-13 00:49:22 INFO  root:45 - Wait for enable clickable link 'change user'
+2019-05-13 00:49:22 INFO  root:48 - Link is clickable
+2019-05-13 00:49:22 INFO  root:50 - Click on link 'change user'
+2019-05-13 00:49:22 INFO  root:16 - Start log in
+2019-05-13 00:49:24 INFO  root:25 - Login page is opened
+2019-05-13 00:49:54 INFO  root:16 - Start log in
+2019-05-13 00:49:55 INFO  root:25 - Login page is opened
+2019-05-13 00:50:21 INFO  root:37 - Browser closed.
+2019-05-13 00:51:17 INFO  root:31 - Browser started.
+2019-05-13 00:51:17 INFO  root:16 - Start log in
+2019-05-13 00:51:19 INFO  root:25 - Login page is opened
+2019-05-13 00:51:20 INFO  root:31 - Entering login
+2019-05-13 00:51:20 INFO  root:33 - Next button click
+2019-05-13 00:51:21 INFO  root:36 - Password entered
+2019-05-13 00:51:22 INFO  root:38 - Next button click
+2019-05-13 00:51:27 INFO  root:54 - Go to account menu
+2019-05-13 00:51:27 INFO  root:56 - Getting e-mail address
+2019-05-13 00:51:27 INFO  root:58 - Close account menu
+2019-05-13 00:51:27 INFO  root:16 - Start log in
+2019-05-13 00:51:29 INFO  root:25 - Login page is opened
+2019-05-13 00:51:52 INFO  root:16 - Start log in
+2019-05-13 00:51:52 INFO  root:21 - Start log out
+2019-05-13 00:55:42 INFO  root:31 - Browser started.
+2019-05-13 00:55:43 INFO  root:16 - Start log in
+2019-05-13 00:55:45 INFO  root:25 - Login page is opened
+2019-05-13 00:55:45 INFO  root:31 - Entering login
+2019-05-13 00:55:46 INFO  root:33 - Next button click
+2019-05-13 00:55:47 INFO  root:36 - Password entered
+2019-05-13 00:55:47 INFO  root:38 - Next button click
+2019-05-13 00:55:53 INFO  root:54 - Go to account menu
+2019-05-13 00:55:53 INFO  root:56 - Getting e-mail address
+2019-05-13 00:55:53 INFO  root:58 - Close account menu
+2019-05-13 00:55:53 INFO  root:21 - Start log out
+2019-05-13 00:55:53 INFO  root:45 - Go to account menu
+2019-05-13 00:55:55 INFO  root:47 - Press exit button
+2019-05-13 00:55:56 INFO  root:44 - Go to User change menu
+2019-05-13 00:55:56 INFO  root:45 - Wait for enable clickable link 'change user'
+2019-05-13 00:55:56 INFO  root:48 - Link is clickable
+2019-05-13 00:55:56 INFO  root:50 - Click on link 'change user'
+2019-05-13 00:55:57 INFO  root:37 - Browser closed.
+2019-05-13 00:56:47 INFO  root:31 - Browser started.
+2019-05-13 00:56:47 INFO  root:16 - Start log in
+2019-05-13 00:56:49 INFO  root:25 - Login page is opened
+2019-05-13 00:56:49 INFO  root:31 - Entering login
+2019-05-13 00:56:50 INFO  root:33 - Next button click
+2019-05-13 00:56:51 INFO  root:36 - Password entered
+2019-05-13 00:56:51 INFO  root:38 - Next button click
+2019-05-13 00:57:02 INFO  root:54 - Go to account menu
+2019-05-13 00:57:02 INFO  root:56 - Getting e-mail address
+2019-05-13 00:57:02 INFO  root:58 - Close account menu
+2019-05-13 00:57:02 INFO  root:16 - Start log in
+2019-05-13 00:57:03 INFO  root:25 - Login page is opened
+2019-05-13 00:57:21 INFO  root:16 - Start log in
+2019-05-13 00:57:21 INFO  root:21 - Start log out
