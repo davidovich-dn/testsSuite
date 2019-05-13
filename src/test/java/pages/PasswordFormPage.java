@@ -43,7 +43,7 @@ public class PasswordFormPage extends Page {
         userChangeMenu.click();
         logger.info("Go to User change menu");
         logger.info("Wait for enable clickable link 'change user'");
-        (new WebDriverWait(Driver.getDriver(), 5)).until(ExpectedConditions
+        (new WebDriverWait(Driver.getDriver(), 10)).until(ExpectedConditions
                 .elementToBeClickable(toLoginFormPageLink));
         logger.info("Link is clickable");
         toLoginFormPageLink.click();

@@ -198,3 +198,111 @@
 2019-05-13 00:57:03 INFO  root:25 - Login page is opened
 2019-05-13 00:57:21 INFO  root:16 - Start log in
 2019-05-13 00:57:21 INFO  root:21 - Start log out
+2019-05-13 11:15:48 INFO  root:31 - Browser started.
+2019-05-13 11:15:49 INFO  root:16 - Start log in
+2019-05-13 11:15:51 INFO  root:25 - Login page is opened
+2019-05-13 11:15:51 INFO  root:31 - Entering login
+2019-05-13 11:15:52 INFO  root:33 - Next button click
+2019-05-13 11:15:53 INFO  root:36 - Password entered
+2019-05-13 11:15:53 INFO  root:38 - Next button click
+2019-05-13 11:16:03 INFO  root:64 - Create a new letter
+2019-05-13 11:16:04 INFO  root:36 - MailTo field filled
+2019-05-13 11:16:04 INFO  root:42 - Subject field filled
+2019-05-13 11:16:05 INFO  root:48 - MailBody field filled
+2019-05-13 11:16:05 INFO  root:54 - Send button click
+2019-05-13 11:16:05 INFO  root:55 - Waiting for message about successful sending
+2019-05-13 11:16:07 INFO  root:58 - Message about successful sending appeared
+2019-05-13 11:16:07 INFO  root:69 - Looking for received letter
+2019-05-13 11:16:07 INFO  root:74 - Start cleaning
+2019-05-13 11:16:07 INFO  root:76 - Check letter
+2019-05-13 11:16:07 INFO  root:78 - The letter goes to a trash can
+2019-05-13 11:16:07 INFO  root:21 - Start log out
+2019-05-13 11:16:07 INFO  root:45 - Go to account menu
+2019-05-13 11:16:09 INFO  root:47 - Press exit button
+2019-05-13 11:16:09 INFO  root:44 - Go to User change menu
+2019-05-13 11:16:09 INFO  root:45 - Wait for enable clickable link 'change user'
+2019-05-13 11:16:10 INFO  root:48 - Link is clickable
+2019-05-13 11:16:10 INFO  root:50 - Click on link 'change user'
+2019-05-13 11:16:11 INFO  root:37 - Browser closed.
+2019-05-13 11:16:29 INFO  root:31 - Browser started.
+2019-05-13 11:16:29 INFO  root:16 - Start log in
+2019-05-13 11:16:31 INFO  root:25 - Login page is opened
+2019-05-13 11:16:32 INFO  root:31 - Entering login
+2019-05-13 11:16:32 INFO  root:33 - Next button click
+2019-05-13 11:16:33 INFO  root:36 - Password entered
+2019-05-13 11:16:34 INFO  root:38 - Next button click
+2019-05-13 11:16:42 INFO  root:54 - Go to account menu
+2019-05-13 11:16:43 INFO  root:56 - Getting e-mail address
+2019-05-13 11:16:43 INFO  root:58 - Close account menu
+2019-05-13 11:16:43 INFO  root:21 - Start log out
+2019-05-13 11:16:43 INFO  root:45 - Go to account menu
+2019-05-13 11:16:45 INFO  root:47 - Press exit button
+2019-05-13 11:16:45 INFO  root:44 - Go to User change menu
+2019-05-13 11:16:45 INFO  root:45 - Wait for enable clickable link 'change user'
+2019-05-13 11:16:45 INFO  root:48 - Link is clickable
+2019-05-13 11:16:46 INFO  root:50 - Click on link 'change user'
+2019-05-13 11:16:46 INFO  root:37 - Browser closed.
+2019-05-13 11:17:04 INFO  root:31 - Browser started.
+2019-05-13 11:17:04 INFO  root:16 - Start log in
+2019-05-13 11:17:06 INFO  root:25 - Login page is opened
+2019-05-13 11:17:06 INFO  root:31 - Entering login
+2019-05-13 11:17:06 INFO  root:33 - Next button click
+2019-05-13 11:17:08 INFO  root:36 - Password entered
+2019-05-13 11:17:08 INFO  root:38 - Next button click
+2019-05-13 11:17:08 INFO  root:21 - Start log out
+2019-05-13 11:17:18 INFO  root:45 - Go to account menu
+2019-05-13 11:17:20 INFO  root:47 - Press exit button
+2019-05-13 11:17:20 INFO  root:44 - Go to User change menu
+2019-05-13 11:17:20 INFO  root:45 - Wait for enable clickable link 'change user'
+2019-05-13 11:17:21 INFO  root:48 - Link is clickable
+2019-05-13 11:17:21 INFO  root:50 - Click on link 'change user'
+2019-05-13 11:17:21 INFO  root:38 - Checking presence of Login input field
+2019-05-13 11:17:22 INFO  root:37 - Browser closed.
+2019-05-13 11:19:32 INFO  root:31 - Browser started.
+2019-05-13 11:19:32 INFO  root:16 - Start log in
+2019-05-13 11:19:34 INFO  root:25 - Login page is opened
+2019-05-13 11:19:34 INFO  root:31 - Entering login
+2019-05-13 11:19:34 INFO  root:33 - Next button click
+2019-05-13 11:19:36 INFO  root:36 - Password entered
+2019-05-13 11:19:36 INFO  root:38 - Next button click
+2019-05-13 11:19:36 INFO  root:21 - Start log out
+2019-05-13 11:19:46 INFO  root:45 - Go to account menu
+2019-05-13 11:19:48 INFO  root:47 - Press exit button
+2019-05-13 11:19:48 INFO  root:44 - Go to User change menu
+2019-05-13 11:19:48 INFO  root:45 - Wait for enable clickable link 'change user'
+2019-05-13 11:19:48 INFO  root:48 - Link is clickable
+2019-05-13 11:19:48 INFO  root:50 - Click on link 'change user'
+2019-05-13 11:19:48 INFO  root:38 - Checking presence of Login input field
+2019-05-13 11:19:50 INFO  root:37 - Browser closed.
+2019-05-13 11:23:33 INFO  root:31 - Browser started.
+2019-05-13 11:23:33 INFO  root:16 - Start log in
+2019-05-13 11:23:36 INFO  root:25 - Login page is opened
+2019-05-13 11:23:36 INFO  root:31 - Entering login
+2019-05-13 11:23:36 INFO  root:33 - Next button click
+2019-05-13 11:23:38 INFO  root:36 - Password entered
+2019-05-13 11:23:38 INFO  root:38 - Next button click
+2019-05-13 11:23:38 INFO  root:21 - Start log out
+2019-05-13 11:23:47 INFO  root:45 - Go to account menu
+2019-05-13 11:23:49 INFO  root:47 - Press exit button
+2019-05-13 11:23:49 INFO  root:44 - Go to User change menu
+2019-05-13 11:23:49 INFO  root:45 - Wait for enable clickable link 'change user'
+2019-05-13 11:23:50 INFO  root:48 - Link is clickable
+2019-05-13 11:23:50 INFO  root:50 - Click on link 'change user'
+2019-05-13 11:23:50 INFO  root:38 - Checking presence of Login input field
+2019-05-13 11:23:51 INFO  root:37 - Browser closed.
+2019-05-13 11:28:15 INFO  root:31 - Browser started.
+2019-05-13 11:28:15 INFO  root:20 - Start log in
+2019-05-13 11:28:17 INFO  root:25 - Login page is opened
+2019-05-13 11:28:17 INFO  root:31 - Entering login
+2019-05-13 11:28:18 INFO  root:33 - Next button click
+2019-05-13 11:28:19 INFO  root:36 - Password entered
+2019-05-13 11:28:19 INFO  root:38 - Next button click
+2019-05-13 11:28:19 INFO  root:25 - Start log out
+2019-05-13 11:28:29 INFO  root:45 - Go to account menu
+2019-05-13 11:28:31 INFO  root:47 - Press exit button
+2019-05-13 11:28:31 INFO  root:44 - Go to User change menu
+2019-05-13 11:28:31 INFO  root:45 - Wait for enable clickable link 'change user'
+2019-05-13 11:28:32 INFO  root:48 - Link is clickable
+2019-05-13 11:28:32 INFO  root:50 - Click on link 'change user'
+2019-05-13 11:28:32 INFO  root:38 - Checking presence of Login input field
+2019-05-13 11:28:33 INFO  root:37 - Browser closed.

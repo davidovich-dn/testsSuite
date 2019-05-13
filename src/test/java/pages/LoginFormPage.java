@@ -10,7 +10,7 @@ public class LoginFormPage extends Page {
 
     private static final Logger logger = LogManager.getRootLogger();
 
-    @FindBy(xpath = "//input[@type='email']")
+    @FindBy(xpath = "//input[@id='identifierId']")
     private WebElement loginInputField;
 
     @FindBy(xpath = "//span[@class='RveJvd snByac']")

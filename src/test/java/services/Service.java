@@ -1,7 +1,11 @@
 package services;
 
+import driver.Driver;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.InboxPage;
 import pages.LoginFormPage;
 
@@ -28,6 +32,8 @@ public class Service {
     }
 
     public boolean isElementLoginInputFieldPresentThrowing(){
+        (new WebDriverWait(Driver.getDriver(), 10)).until(ExpectedConditions
+                .presenceOfElementLocated(By.xpath("//input[@id='identifierId']")));
         return loginFormPage.isElementLoginInputFieldPresent();
     }
 
